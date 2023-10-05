@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height: 80px;
+    margin: 30px 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width:60px;
+    height: 60px;
+}
+.logo h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(179, 14, 14);
+    margin-left: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 1.5;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logIn{
+    background-color: rgb(203, 35, 35);
+    padding: 15px;
+    border-radius: 30px;
+    margin-right: 30px;
+} 
+.logIn a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.signUp{
+    background-color: rgb(188, 188, 188);
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.signUp a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.home_section{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 700px;
+}
+.text{
+    font-size: 5rem;
+    color: black;
+    font-weight: 400;
+
+}
+
+.searchIdea_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    height:1100px;
+    background-color: #fcea83;
+    position: relative;
+}
+.dropdown{
+  position: absolute;
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+  padding: 20px;
+  z-index: 1; 
+}
+ .dropdown a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+ }
+
+ .dropdown i{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 20px;
+ }
+
+ .search_Idea{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: center;
+    gap: 360px;
+    line-height: 1.6;
+ }
+ .searchIdea-text{
+    text-align: center;
+ }
+ .searchIdea-text h1{
+    font-size: 4.5rem;
+    color:#b01b61;
+    padding:15px;
+ }
+
+ .searchIdea-text p{
+    font-size: 2rem;
+    color:#b01b61;
+    font-weight: 500; 
+ }
+ .searchIdea-text button{
+    border-radius: 30px;
+    padding:20px;
+    background-color: #b01b61;
+    margin-top: 30px;   
+ }
+
+ .searchIdea-text button a{
+    color: #fcea83;
+    font-size: 1.5rem;
+ }
+
+ .search_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -260px;
+    margin-left: -50px;
+  }
+
+  .search_images img:first-child {
+    z-index: 4;
+    width:450px;
+    height: 660px;
+    margin: 50px 30px 10px 300px;
+
+  }
+  .search_images img:nth-child(2) {
+    z-index:2;
+    margin-top:-590px;
+    margin-left: -290px;
+    width:300px;
+    height:420px;
+
+  }
+  .search_images img:nth-child(3) {
+    z-index: 3;
+    margin-top: -110px;
+    margin-left:750px;
+    width:250px;
+    height:380px;
+  }
+  .search_images img:nth-child(4) {
+    z-index: 1;
+    margin-top: -890px;
+    margin-left: 690px;
+    width:260px;
+    height:330px;
+  }
+ .search_images input:last-child{
+    z-index: 5;
+  }
+  input{
+    width:420px;
+    height: 130px;
+    border-radius: 100px;
+    margin-left: 170px;
+    background-color: white;
+    border: none;
+    outline: none;
+  }
+  ::placeholder{
+    text-align: center;
+    color: #6c1a41;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+.saveIdea_container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 1120px;
+    background-color: rgb(168, 217, 248);
+}
+
+.saveIdea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.saveIdea .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.saveIdea .content h1{
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: rgb(37, 90, 92);
+}
+
+.saveIdea .content p{
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: rgb(45, 82, 83);
+    padding:30px;
+    line-height: 1.5;
+}
+.saveIdea .content button{
+    border-radius: 40px;
+    padding:25px;
+    background-color: rgb(45,82,83);
+    margin-top: 30px; 
+}
+
+.saveIdea .content button a{
+    color: rgb(181, 242, 244);
+    font-size: 20px;
+}
+.homevibes_images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homevibes_images img:first-child{
+    width: 330px;
+    height: 400px;
+    border-radius: 50px;
+    z-index: 2;
+    margin-top: 70px;
+    margin-left: 1040px;
+}
+
+.homevibes_images img:nth-child(2){
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    z-index: 1;
+    margin-top: -390px;
+    margin-left: -50px;
+}
+
+.homevibes_images img:nth-child(3){
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    margin-top: -160px;
+    margin-left: 940px;
+    z-index: 3;
+}
+.homevibes_images img:nth-child(4){
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+    margin-top: -50px;
+    margin-left: 100px;
+    z-index: 4;
+}
+.homevibes_images img:nth-child(5){
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    z-index: 5;
+    margin-top: -250px;
+    margin-left: 950px;
+}
+.bestPart_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1100px;
+    background-color: pink;
+}
+
+.bestPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image_shades img:first-child {
+    margin-left:-100px;
+    width: 100%; 
+    height: 1100px;
+    z-index: 3;
+}
+.image_shades img:nth-child(2){
+    width: 300px;
+    height: 500px;
+    margin-left: -990px;
+    z-index:2;
+}
+.image_shades img:last-child{
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+.bestPart_text {
+    width: 50%; 
+    text-align: center;
+}
+
+.bestPart_text h1 {
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: maroon;
+}
+
+.bestPart_text p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: maroon;
+    padding: 20px;
+}
+
+.bestPart_text button {
+    background-color: rgb(171, 28, 28);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.bestPart_text button a {
+    color: white;
+    font-size: 1.5rem;
+}
