@@ -1,42 +1,25 @@
-let currentSlider = "slider1";
+let currentSlider = 1;
 
 function toggleSlider() {
-  const slider1 = document.getElementById("slider1");
-  const slider2 = document.getElementById("slider2");
-  const slider3 = document.getElementById("slider3");
-  const slider4 = document.getElementById("slider4");
+    // Hide all sliders
+    const sliders = document.querySelectorAll('.slider-container');
+    sliders.forEach(slider => {
+        slider.style.display = 'none';
+    });
 
-  if (currentSlider === "slider1") {
-    slider1.style.animationName = "fade1";
-    slider2.style.animationName = "fade2";
-    slider3.style.animationName = "fade3";
-    slider4.style.animationName = "fade4";
-    currentSlider = "slider2";
-  } else if (currentSlider === "slider2") {
-    slider1.style.animationName = "fade4";
-    slider2.style.animationName = "fade3";
-    slider3.style.animationName = "fade2";
-    slider4.style.animationName = "fade1";
-    currentSlider = "slider3";
-  } else if (currentSlider === "slider3") {
-    slider1.style.animationName = "fade3";
-    slider2.style.animationName = "fade2";
-    slider3.style.animationName = "fade1";
-    slider4.style.animationName = "fade4";
-    currentSlider = "slider4";
-  } else {
-    slider1.style.animationName = "fade2";
-    slider2.style.animationName = "fade1";
-    slider3.style.animationName = "fade4";
-    slider4.style.animationName = "fade3";
-    currentSlider = "slider1";
-  }
+    // Show the current slider
+    const current = document.getElementById(`slider${currentSlider}`);
+    current.style.display = 'block';
+
+
+    currentSlider = currentSlider < 4 ? currentSlider + 1 : 1;
 }
+
 
 toggleSlider();
 
-// Toggle the slider every 8 seconds
 setInterval(toggleSlider, 8000);
+
 
 
 // down  arrow scrolling functionality
