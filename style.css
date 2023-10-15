@@ -274,7 +274,6 @@ body{
     z-index:5;
     animation: moveUpDown 3s infinite;
     cursor: pointer;
-    /* opacity: 0.6; */
 }
 .down_arrow_icon i{
      font-size: 1rem;
@@ -521,9 +520,55 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 19%;
+}
+.image-content h2{
+    right:10%;
+    font-size: 40px;
+    color: white;
+    z-index:5;
 }
 
-.homevibes_images  img:first-child{
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 270px;
+    height: 300px;
+    border-radius: 50px;
+    z-index: 2;
+    margin-top: -32%;
+    margin-left: 840px;
+}
+
+.image-content {
+    position: absolute;
+    color: white;
+    z-index: 2; 
+    padding: 5px;
+}
+
+.img1{
+        font-size: 28px;
+        bottom: 70px; 
+        left: 860px;
+}
+.image-container:nth-child(2) img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    z-index: 1;
+    margin-left:-95px;
+    margin-top: -350px;
+}
+.img2{
+    font-size: 50px;
+    bottom: 150px;
+    left:-5px;
+}
+/* .homevibes_images  img:first-child{
     width: 270px;
     height: 300px;
     border-radius: 50px;
@@ -545,32 +590,45 @@ body{
     z-index: 1;
     margin-top: -350px;
     margin-left: -30px;
-}
-.homevibes_images  img:nth-child(3){
+} */
+.image-container:nth-child(3) img{
     width: 200px;
     height: 200px;
     border-radius: 50px;
-    margin-top: -90px;
-    margin-left: 790px;
-    z-index: 3;
+    margin-top: -110px;
+    margin-left: 760px;
+    z-index: 8;
 }
-.homevibes_images img:nth-child(4){
+.img3{
+    font-size: 20px;
+    bottom: 50px;
+    left:790px;
+}
+.image-container:nth-child(4) img{
     width: 300px;
     height: 300px;
     border-radius: 50px;
-    margin-top: -50px;
-    margin-left: 100px;
+    margin-top: -20px;
+    margin-left: 90px;
     z-index: 4;
 }
-.homevibes_images img:nth-child(5){
+.img4{
+    font-size: 30px;
+    bottom: 80px;
+    left:170px;
+}
+.image-container:nth-child(5) img{
     width: 250px;
     height: 280px;
     border-radius: 50px;
     z-index: 5;
-    margin-top: -170px;
-    margin-left: 850px;
+    margin-left: 810px;
 }
-
+.img5{
+    font-size: 27px;
+    bottom:90px;
+    left:850px;
+}
 
 .bestPart_container {
     display: flex;
