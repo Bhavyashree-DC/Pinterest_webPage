@@ -1,3 +1,4 @@
+
 let currentSlider = 1;
 
 function toggleSlider() {
@@ -11,10 +12,18 @@ function toggleSlider() {
     const current = document.getElementById(`slider${currentSlider}`);
     current.style.display = 'block';
 
+    // Get the background color of the corresponding down_arrow_outer
+    const downArrowOuter = document.querySelector(`#slider${currentSlider} .down_arrow_outer`);
+    const bgColor = window.getComputedStyle(downArrowOuter).backgroundColor;
+
+    // Update the dot button background color
+    const dotButtons = document.querySelectorAll('.dots-list button');
+    dotButtons.forEach((dotButton, index) => {
+        dotButton.style.backgroundColor = index + 1 === currentSlider ? bgColor : '';
+    });
 
     currentSlider = currentSlider < 4 ? currentSlider + 1 : 1;
 }
-
 
 toggleSlider();
 
@@ -24,10 +33,13 @@ setInterval(toggleSlider, 8000);
 
 // down  arrow scrolling functionality
 
-const downArrows = document.querySelectorAll(".down_arrow");
+// Get all arrow down icons with the common class
+const arrowDownIcons = document.querySelectorAll(".down_arrow_outer i");
 
-downArrows.forEach((arrow, index) => {
-    arrow.addEventListener("click", function () {
+// Add click event listeners to scroll to the corresponding home section
+arrowDownIcons.forEach((icon, index) => {
+    icon.addEventListener("click", function () {
+        const searchIdeaContainer = document.getElementById(`sliderDownArrow${index + 1}`);
         searchIdeaContainer.scrollIntoView({ behavior: "smooth" });
     });
 });
