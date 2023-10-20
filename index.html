@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Pinterest</title>
 </head>
 <body>
-   <div class = "container">
+<div class = "container">
+    <!-- Navigation bar  -->
      <nav>
         <div class="navdiv">
             <div class="logo">
-                <img src = "images/download.png">
-                <h1>Pinterest</h1></div>
-                <ul>
+                <a href="#"><img src = "images/download.png">Pinterest</a>
+            </div>
+                <ul class = "menu">
                     <li><a href = "#">About</a></li>
                     <li><a href = "#">Business</a></li>
                     <li><a href = "#">Blog</a></li>
@@ -24,65 +26,639 @@
                 </ul>
         </div>
      </nav>
-     <div class="home_section">
-        <p class="text">Get your Next</p>
-     </div>
+    <!-- Navigation bar end  -->
 
-     <div class="searchIdea_container">
-          <div class="dropdown">
-                <a href = '#'>Here's how its works</a>
-                <ion-icon name="chevron-down"></ion-icon>
-          </div>
-         
+    <!-- Home section -->
+
+  <div class="home_section">
+            <div class="centered-content">
+                <h1 class="text">Get your Next</h1>
+                    <ul class="dots-list">
+                        <li><button data-slide="1"></button></li>
+                        <li><button data-slide="2"></button></li>
+                        <li><button data-slide="3"></button></li>
+                        <li><button data-slide="4"></button></li>
+                    </ul>  
+            </div>
+
+                <!-- slider1 container -->
+
+                <div class="slider-container" id="slider1">
+                     <div class="image_container_wrapper">
+                           <div class="image_container" id="image-container1">
+                                <div class="image-box">
+                                    <img src="./images/food_item1.jpg" alt="Image 1">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s11.jpg" alt="Image 2">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/food_item3.jpg" alt="Image 3">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/food_item4.jpg" alt="Image 4">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/f5.jpg" alt="Image 5">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/f6.jpg" alt="Image 6">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/f22.jpg" alt="Image 7">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/f21.jpg" alt="Image 8">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s10.jpg" alt="Image 9">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s3.jpg" alt="Image 10">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s5.jpg" alt="Image 11">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s8.jpg" alt="Image 12">
+                                </div>
+
+                                <div class="image-box">
+                                    <img src="./images/s9.jpg" alt="Image 13">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s10.jpg" alt="Image 14">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s11.jpg" alt="Image 15">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s12.jpg" alt="Image 16">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/f13.jpg" alt="Image 17">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s14.jpg" alt="Image 18">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s15.jpg" alt="Image 19">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s16.jpg" alt="Image 20">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./images/s17.jpg" alt="Image 21">
+                                </div>
+                           </div>
+                      </div>
+
+                     <!-- Down Arrow container  -->
+                   
+                        <div class="down_arrow_outer" >
+                            <div class="down_arrow_icon" data-section="searchIdea">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                   
+                    <!-- Content to display -->
+
+                        <div class="centered-content" >
+                            <p id="sliderText">Chai Time Snacks Idea</p>
+                        </div>
+                   
+               </div>
+
+               <!-- slider1 close -->
+
+                <!-- slider2  -->
+
+                <div class="slider-container" id="slider2">
+                    <div class="image_container_wrapper">
+                        <div class="image_container" id="image-container2">
+                            <div class="image-box">
+                                <img src="./images/home1.jpg" alt="Image 1">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home2.jpg" alt="Image 2">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/hom3.jpg" alt="Image 3">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home4.jpg" alt="Image 4">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home5.jpg" alt="Image 5">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home6.jpg" alt="Image 6">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home7.jpg" alt="Image 7">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/hom3.jpg" alt="Image 8">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home9.jpg" alt="Image 9">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home6.jpg" alt="Image 10">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/home5.jpg" alt="Image 11">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/hom3.jpg" alt="Image 12">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h10.jpg" alt="Image 13">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h11.jpg" alt="Image 14">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h12.jpg" alt="Image 15">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h13.jpg" alt="Image 16">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h14.jpg" alt="Image 17">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h15.jpg" alt="Image 18">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h16.jpg" alt="Image 19">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h17.jpg" alt="Image 20">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/h18.jpg" alt="Image 21">
+                            </div>
+                        </div>
+                   </div>
+
+                        <!-- down arrow icon  -->
+                        
+                        <div class="down_arrow_outer" >
+                            <div class="down_arrow_icon" data-section="searchIdea">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Content to display -->
+
+                        <div class="centered-content">
+                            <p id="sliderText">Home Decor</p>
+                        </div>    
+                       
+                </div>
+
+
+                <!-- Slider2 end  -->
+
+               <!-- Slider3  -->
+
+                <div class="slider-container" id="slider3">
+                    <div class="image_container_wrapper">
+                        <div class="image_container" id="image-container3">
+                            
+                            <div class="image-box">
+                                <img src="./images/o1.jpg" alt="Image 1">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o2.jpg" alt="Image 2">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o3.jpg" alt="Image 3">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o16.jpg" alt="Image 4">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o5.jpg" alt="Image 5">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/011.jpg" alt="Image 6">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o7.jpg" alt="Image 7">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o9.jpg" alt="Image 8">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o10.jpg" alt="Image 9">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o17.jpg" alt="Image 10">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o12.jpg" alt="Image 11">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o13.jpg" alt="Image 12">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o30.jpg" alt="Image 13">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o18.jpg" alt="Image 14">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o23.jpg" alt="Image 15">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o24.jpg" alt="Image 16">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o26.jpg" alt="Image 17">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o27.jpg" alt="Image 18">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o28.jpg" alt="Image 19">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o25.jpg" alt="Image 20">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/o22.jpg" alt="Image 21">
+                            </div>
+                        </div>
+                    </div>  
+                    
+                       <!-- Down arrow icon  -->
+                       
+                            <div class="down_arrow_outer">
+                                <div class="down_arrow_icon"  data-section="searchIdea">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                
+                        <!-- content display -->
+                            <div class="centered-content">
+                                <p id="sliderText">Outfit Idea</p>
+                            </div>
+                    
+                </div>
+
+                <!-- Slider3 end  -->
+
+
+                <!-- Slider4  -->
+
+                <div class="slider-container" id="slider4">
+                    <div class="image_container_wrapper">
+                        <div class="image_container" id="image-container4">
+                            <div class="image-box">
+                                <img src="./images/art7.jpg" alt="Image 1">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art8.jpg" alt="Image 2">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art3.jpg" alt="Image 3">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art1.jpg" alt="Image 4">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art9.jpg" alt="Image 5">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art2.jpg" alt="Image 6">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art4.jpg" alt="Image 7">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art5.jpg" alt="Image 8">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art9.jpg" alt="Image 9">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art6.jpg" alt="Image 10">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art6.jpg" alt="Image 11">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/art10.jpg" alt="Image 12">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d3.jpg" alt="Image 13">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d11.jpg" alt="Image 14">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d4.jpg" alt="Image 15">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d5.jpg" alt="Image 16">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d6.jpg" alt="Image 17">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d7.jpg" alt="Image 18">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d8.jpg" alt="Image 19">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d9.jpg" alt="Image 20">
+                            </div>
+                            <div class="image-box">
+                                <img src="./images/d10.jpg" alt="Image 21">
+                            </div>
+                        </div>
+                    </div>
+
+                             <!-- down arrow icon -->
+                  
+                            <div class="down_arrow_outer" >
+                                <div class="down_arrow_icon" data-section="searchIdea">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+
+                            
+                             <!-- content to display  -->
+
+                            <div class="centered-content slider4-content">
+                                <p id="sliderText">DIY Idea</p>
+                            </div>
+
+              </div>  
+
+               <!-- slider4 end -->
+
+               <div class="dropdown ">
+                    <a href = '#searchIdea' data-section="searchIdea">Here's how its works</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+              </div>
+    </div>
+
+    <!-- Home section end -->
+
+
+    <!-- SearchIdea  section  -->
+
+    <div id="searchIdea">
+       <div class="searchIdea_container" id="searchIdea">
             <div class="search_Idea">
                 <div class="search_images">
                     <img src ="./images/center-2d76a691.png">
                     <img src ="images/left-ccce7532.png">
                     <img src = "images/right-2bd1edfc.png">
                     <img src = "./images/topRight-6902088a.png">
-                    <input type="text" placeholder="easy chicken dinner">
-                  </div>  
+                    <input type="text" placeholder=" &#128269; easy chicken dinner">
+                </div>  
+
                 <div class="searchIdea-text">          
                       <h1>Search for an Idea</h1>
                       <p>What do you want to try next? Think<br> of something you’re into—like <br> chicken dinner”—and see what you find.</p>
                       <button><a href = "">Explore</a></button>     
                 </div>
             </div>
-     </div>
+       </div>
+    </div>
 
-     <div class="saveIdea_container">
+    <!-- SearchIdea section end -->
+
+
+    <!-- saveIdea section -->
+
+    <div class="saveIdea_container">
         <div class="saveIdea">
             <div class="content">
                 <h1>Save Ideas you like</h1>
                 <p>Collect your favorites so you can<br> get back to them later.</p>
                 <button><a href = "">Explore</a></button>     
             </div>
+
             <div class = "homevibes_images">
-                <img src = '/images/garden1.jpg'>
-                <img src = '/images/bedroom.jpg'>
-                <img src = '/images/bathroom.jpg'>
-                <img src = '/images/watermelon.jpg'>
-                <img src = '/images/area.jpg'>
+                <div class="image-container">
+                   <img src="/images/bedroom.jpg">
+                   <h4 class="image-content img1">My scandinavain <br>Bedroom</br></h4>
+                </div>
+
+                <div class="image-container">
+                    <img src="/images/garden1.jpg">
+                    <h4 class="image-content img2">Ferm future <br>home vibes</br></h4>
+                </div>
+
+                <div class="image-container">
+                    <img src="/images/bathroom.jpg">
+                    <h4 class="image-content img3">Our bathroom <br>upgrade</br></h4>
+                </div>
+
+                <div class="image-container">
+                    <img src="/images/cup.png">
+                    <h4 class="image-content img4">Serve my<br>drinks in <br>style</br></h4>
+                </div>
+
+                <div class="image-container">
+                    <img src="/images/area.jpg">
+                    <h4 class="image-content img5">The deck of <br>my dreams</br></h4>
+                </div>
             </div>
         </div>
     </div>
+    <!-- saveIdea section end  -->
 
-  <div class="bestPart_container">
-      <div class="bestPart">
-           <div class="image_shades">
-               <img src = "./images/girl1.png">
-               <img src = "./images/girl2.png">
-               <img src = "./images/girl3.png">
-           </div>
-          <div class="bestPart_text">
-            <h1>See it, make it, <br> try it, do it</h1>
-            <p>
-              The best part of Pinterest is discovering <br>new things and ideas from people <br> around the world.
-            </p>
-            <button><a href = "">Explore</a></button>     
-          </div>
-      </div>
-  </div>
-  </div> 
+    <!-- bestPart section -->
+    <div class="bestPart_container">
+        <div class="bestPart">
+            <div class="image_shades">
+                <img src = "./images/girl1.png" class = "main_image">
+                <img src = "./images/girl2.png" class = "image_above">
+                <img src = "./images/girl3.png" class = "image_above1">
+            </div>
+            <div class="bestPart_text">
+                <h1>See it, make it, <br> try it, do it</h1>
+                <p>
+                    The best part of Pinterest is discovering <br>new things and ideas from people <br> around the world.
+                </p>
+                <button><a href = "#">Explore</a></button>     
+            </div>
+        </div>
+    </div>
+   <!-- bestPart section end  -->
+ 
+   <!-- contact-section  -->
+   <div class="contact-container">
+        <!-- header -->
+            <div class="signup-message">
+                <h5>Sign Up to<br> Get Your<br> Ideas</h5>
+            </div>
+            <!-- header close -->
+            
+            <!-- Background grid image layout -->
+            <div class="contact-images">
+                <div class="contact-image-box">'
+                    <img src="./images/f15.jpg" alt="Image 1">
+                </div>
+
+                <div class="contact-image-box">
+                <img src="./images/f8.jpg" alt="Image 2">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f13.jpg" alt="Image 3">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f12.jpg" alt="Image 4">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f11.jpg" alt="Image 5">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f10.jpg" alt="Image 6">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f9.jpg" alt="Image 7">
+                </div>
+                <div class="contact-image-box">
+                    <img src="./images/f12.jpg" alt="Image 8">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f6.jpg" alt="Image 9">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f5.jpg" alt="Image 10">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/food_item1.jpg" alt="Image 11">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/food_item2.jpg" alt="Image 12">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/food_item3.jpg" alt="Image 11">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f16.jpg" alt="Image 12">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f17.jpg" alt="Image 13">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f18.jpg" alt="Image 14">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f19.jpg" alt="Image 15">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f20.jpg" alt="Image 16">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f21.jpg" alt="Image 17">
+                </div>
+
+                <div class="contact-image-box">
+                    <img src="./images/f22.jpg" alt="Image 18">
+                </div>
+                
+                <div class="contact-image-box">
+                    <img src="./images/f23.jpg" alt="Image 19">
+                </div>
+            </div>
+            <!-- grid layout end -->
+
+            <!-- up arrow icon -->
+            <div class="up-arrow" id="scrollToHome">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+
+            <!-- contact form to connect -->
+            <div class="contact-form">
+                <form action="#">
+                    <div class="header">
+                        <img src = "images/download.png">
+                        <h3>Welcome to Pinterest</h3>
+                        <h4>Find a new idea to try</h4>
+                    </div>
+
+                    <div class="input_field">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder ="email" required>
+
+                        <label for="password">Password</label>
+                        <input type ="password"  placeholder ="password" required>
+                        
+                        <label for="dob">Birthdate</label>
+                        <input type="date" placeholder="date" required>
+                        
+                        <button class = "continue">Continue</button>
+                        <h3>OR</h3>
+
+                        <button class ="facebook"><ion-icon name="logo-facebook"></ion-icon>Continue with Facebook</button> 
+
+                        <div class="terms-container">
+                            <p>By continuing you agree to Pinterest's<br><b>Terms of service</b>and acknowledge you've read our <br><b>Privacy Policy.</b> Notice at collection.</b></p>
+                        </div>
+
+                        <div class="create_acct">
+                            <p>Create a free business account</p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <!-- contact form end -->
+    </div>
+    <!-- contact section end -->
+</div>
+<!-- main container end -->
+
+
+<!-- footer section  -->
+ <footer>
+    <div class="footer_list">
+        <ul class = "list_items">
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Iphone App</a></li>
+            <li><a href="#">Android App</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+    </div>
+ </footer>
+<!-- footer section end -->
+
+ <script src ="script.js"></script>
+ 
 </body>
 </html>
