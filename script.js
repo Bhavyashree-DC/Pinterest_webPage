@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let currentSlider = 1;
-    const totalSlides = 4; // Change this to the total number of slides
+    const totalSlides = 4; 
 
     function toggleSlider(sliderNumber) {
         // Hide all sliders
@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Add event listeners to your buttons
+  
     const buttons = document.querySelectorAll('.dots-list button');
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
             toggleSlider(index + 1); 
             clearInterval(autoSlideInterval); 
-            autoSlide(); // Restart the automatic slideshow
+            autoSlide(); 
         });
     });
 
-    // Automatically start with the first slider
+    
     toggleSlider(currentSlider);
 
     
